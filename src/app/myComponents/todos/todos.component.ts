@@ -23,17 +23,17 @@ export class TodosComponent {
         desc:"description2",
         active:true
       },
-      {
-        sno:3,
-        title:"title3",
-        desc:"description3",
-        active:true
-      },
+      
     ]
   }
   deleteTodo(todo:ToDo){
     console.log(todo);
     const index = this.todos.indexOf(todo);
     this.todos.splice(index,1);
+  }
+  todoAdd(todo:ToDo){
+    console.log(todo);
+    const index = this.todos.indexOf(todo);
+    this.todos.push(todo);
   }
 }

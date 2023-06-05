@@ -5,7 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './myComponents/todos/todos.component';
 import { TodoItemsComponent } from './myComponents/todo-items/todo-items.component';
-import { AddCompComponent } from './myComponent/add-comp/add-comp.component';
+import { AddCompComponent } from './myComponents/add-comp/add-comp.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AddCompComponent } from './myComponent/add-comp/add-comp.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
